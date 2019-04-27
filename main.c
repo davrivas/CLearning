@@ -2,9 +2,11 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	int i;
+	int i, start = 1, end = 10;
 	
-	for (i = 0; i < 10; i++) {
+	printf("Numbers from %d to %d\n", start, end);
+	
+	for (i = start; i <= end; i++) {
 		printf("%d\n", i);
 	}
 	
