@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	char name[] = "David";	
+	char *name = "David";	
 	printf("My name is %s and it starts with %c\n", name, name[0]);
 	
 	int age = 23;
@@ -13,3 +13,16 @@ int main(int argc, char *argv[]) {
 	
 	return 0;
 }
+
+struct person {
+	char *name;
+	
+	int setName(char *name[]) {
+		name = name;
+		return 0;
+	}
+	
+	char *getName() {
+		return name;
+	}
+};
