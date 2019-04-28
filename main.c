@@ -2,13 +2,10 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	int i, start = 1, end = 10;
-	
-	printf("Numbers from %d to %d\n", start, end);
-	
-	for (i = start; i <= end; i++) {
-		printf("%d\n", i);
-	}
+	printf("%f\n", pow(2, 3));
+	printf("%f\n", sqrt(36));
+	printf("%f\n", ceil(36.356));
+	printf("%f\n", floor(36.999));
 	
 	return 0;
 }
