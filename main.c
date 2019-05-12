@@ -2,9 +2,14 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	int luckyNumbers[] = { 4, 8, 15, 16, 23, 42 };
-	luckyNumbers[1] = 200;
-	printf("%d", luckyNumbers[1]);
+	printf("Top\n");
+	sayHi("David", 23);
+	sayHi("Santiago", 24);
+	printf("Bottom\n");
 	
 	return 0;
+}
+
+void sayHi(char name[], int age) {
+	printf("Hello %sm you are %d\n", name, age);
 }
