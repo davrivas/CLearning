@@ -2,16 +2,25 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	double num1, num2;
-	printf("Enter first number\n");	
-	scanf("%lf", &num1);
+	char color[20],
+	pluralNoun[20],
+	celebrityF[20],
+	celebrityL[20];
 	
-	printf("Enter second number\n");
-	scanf("%lf", &num2);
+	printf("Enter a color\n");
+	scanf("%s", color);
 	
-	double sum = num1 + num2;
+	printf("Enter the plural noun\n");
+	scanf("%s", pluralNoun);
 	
-	printf("Answer: %f", sum);
+	printf("Enter a celebrity\n");
+	scanf("%s%s", celebrityF, celebrityL);
+	
+	printf("\n");
+	
+	printf("Roses are %s\n", color);
+	printf("%s are blue\n", pluralNoun);
+	printf("I love %s %s", celebrityF, celebrityL);	
 	
 	return 0;
 }
