@@ -1,14 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double cube(double num); // prototype
-
-int main(int argc, char *argv[]) {
-	printf("Answer: %f", cube(3.0));
+int max(int num1, int num2, int num3) {
+	int result;
 	
-	return 0;
+	if (num1 >= num2 && num1 >= num3) {
+		result = num1;
+	} else if (num2 >= num1 && num2 >= num3) {
+		result = num2;
+	} else {
+		result = num3;
+	}
+	
+	return result;
 }
 
-double cube(double num) {
-	return num * num * num;
+int main(int argc, char *argv[]) {
+	printf("%d", max(1, 2, 3));
+	
+	return 0;
 }
