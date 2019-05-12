@@ -2,29 +2,16 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	char name[20];
-	printf("Enter your name\n");
-	fgets(name, 20, stdin);
-	printf("Your name is %s\n", name);
-	printf("\n");
+	double num1, num2;
+	printf("Enter first number\n");	
+	scanf("%lf", &num1);
 	
-	int age; 
-	printf("Enter your age\n");
-	scanf("%d", &age);
-	printf("You are %d years old\n", age);
-	printf("\n");
+	printf("Enter second number\n");
+	scanf("%lf", &num2);
 	
-	int gender;
-	printf("Type 0 if you are a woman\n");
-	printf("Type 1 if you are a man\n");
-	scanf("%d", &gender);
+	double sum = num1 + num2;
 	
-	if (gender == 0)
-		printf("You are a woman\n");
-	else if (gender == 1)
-		printf("You are a man\n");
-	else
-		printf("Invalid option\n");
+	printf("Answer: %f", sum);
 	
 	return 0;
 }
