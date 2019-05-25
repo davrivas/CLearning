@@ -2,10 +2,16 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	int age = 30;
-	int * pAge = &age;
+	//r read
+	// w write
+	// a append information to the file
+	FILE * fpointer = fopen("employees.txt", "a");
 	
-	printf("%d", *&age);
-		
+	//fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar, Accounting");
+	fprintf(fpointer, "\nKelly, Customer service");
+	//fprintf(fpointer, "overriden");
+	
+	fclose(fpointer);
+	
 	return 0;
 }
