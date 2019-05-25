@@ -5,11 +5,12 @@ int main(int argc, char *argv[]) {
 	//r read
 	// w write
 	// a append information to the file
-	FILE * fpointer = fopen("employees.txt", "a");
+	char line[255];
+	FILE * fpointer = fopen("employees.txt", "r");
 	
-	//fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar, Accounting");
-	fprintf(fpointer, "\nKelly, Customer service");
-	//fprintf(fpointer, "overriden");
+	fgets(line, 255, fpointer);
+	fgets(line, 255, fpointer);
+	printf("%s", line);
 	
 	fclose(fpointer);
 	
