@@ -2,20 +2,14 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	int nums[3][2] = {
-		{ 1, 2 },
-		{ 3, 4 },
-		{ 5, 6 },
-	};
+	int age = 30;
+	double gpa = 3.4;
+	char grade = 'A';
 	
-	int i, j;
-	
-	for (i = 0; i < 3; i++) {
-		for (j = 0; j < 2; j++) {
-			printf("%d ", nums[i][j]);
-		}
-		printf("\n");
-	}
-	
+	// the physical memory address
+	printf("age: %p\n", &age);
+	printf("gpa: %p\n", &gpa);
+	printf("grade: %p\n", &grade);
+		
 	return 0;
 }
