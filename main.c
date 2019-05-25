@@ -3,13 +3,13 @@
 
 int main(int argc, char *argv[]) {
 	int age = 30;
+	int * pAge = &age;
 	double gpa = 3.4;
+	double * pGpa = &gpa;
 	char grade = 'A';
+	char * pGrade = &grade;
 	
-	// the physical memory address
-	printf("age: %p\n", &age);
-	printf("gpa: %p\n", &gpa);
-	printf("grade: %p\n", &grade);
+	printf("age's memory address: %p\n", &age);
 		
 	return 0;
 }
